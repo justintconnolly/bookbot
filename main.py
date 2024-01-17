@@ -32,11 +32,8 @@ def main():
     book_name = book_path.split("/")[-1]
     text = get_book_text(book_path)
     word_count = get_word_count(text)
-    #print(word_count)
     char_count = get_char_count(text)
-    #print(char_count)
     sorted_decending_letters = reverse_sort(char_count)
-    #print(sorted_decending_letters)
     create_report(sorted_decending_letters, book_name, word_count)
 
 if __name__ == '__main__':
